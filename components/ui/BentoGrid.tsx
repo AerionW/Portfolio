@@ -49,8 +49,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Traveling", "Reading", "Instruments"];
-  const rightLists = ["Gaming", "Lore", "Music"];
+  const leftLists = ["Cyberpunk", "Anime", "Manhua"];
+  const rightLists = ["TTRPGs", "Manga"];
 
   const [copied, setCopied] = useState(false);
 
@@ -69,8 +69,8 @@ export const BentoGridItem = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        //background: "rgb(4,7,29)",
-        backgroundColor: "linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(119,6,5,1) 65%)",
+        background: "black",
+        //backgroundColor: "linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(119,6,5,1) 65%)",
       }}
     >
       {/* add img divs */}
@@ -122,7 +122,7 @@ export const BentoGridItem = ({
 
           {/* Hobby Lists */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-2 lg:-right-1">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
