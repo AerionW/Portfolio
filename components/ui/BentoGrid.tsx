@@ -2,13 +2,9 @@
 "use client"
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
 import { cn } from "@/lib/utils";
-
-
 import { BackgroundGradientAnimation } from "./GradientBg";
 import MagicButton from "./MagicButton";
-
 export const BentoGrid = ({
   className,
   children,
