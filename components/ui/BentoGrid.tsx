@@ -45,13 +45,13 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Cyberpunk", "Anime", "Manhua"];
+  const leftLists = ["Cyberpunk", "Anime", "Manhwa"];
   const rightLists = ["TTRPGs", "Manga"];
 
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const text = "aarjweise@gmail.com";
+    const text = "";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -100,17 +100,24 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
 
+        {id === 3 && (
+          // add background animation , remove the p tag
+          <BackgroundGradientAnimation>
+            <div></div>
+          </BackgroundGradientAnimation>
+        )}
+
         <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#f1ea0b] z-10">
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10` }
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-[#55e9e6]` }
           >
             {title}
           </div>
@@ -123,7 +130,7 @@ export const BentoGridItem = ({
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center text-[#f1ea0b] bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -135,7 +142,7 @@ export const BentoGridItem = ({
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center text-[#f1ea0b] bg-[#10132E]"
                   >
                     {item}
                   </span>

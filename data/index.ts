@@ -8,12 +8,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: '"Know a little about a lot."',
-    description: "-Robert Kiyosaki",
+    //title: '"Know a little about a lot."',
+    //description: "-Robert Kiyosaki",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "absolute inset-0 m-auto flex items-center justify-center",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/bd_warning.png",
     spareImg: "",
   },
   // {
@@ -36,16 +36,16 @@ export const gridItems = [
     img: "",
     spareImg: "",
   },
-  // {
-  //   id: 4,
-  //   title: "Tech enthusiast and Art enjoyer",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //   imgClassName: "",
-  //   titleClassName: "justify-start",
-  //   //img: "/grid.svg",
-  //   //spareImg: "/b4.svg",
-  // },
+  {
+    id: 4,
+    title: "Current Favorite Game ",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "justify-center z-55",
+    titleClassName: "justify-start",
+    //img: "/cp_1.png",
+    spareImg: "/cp_1.png",
+  },
 
   {
     id: 5,
@@ -86,14 +86,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg","/three.svg", "/c.svg"],
     link: "https://github.com/AerionW",
   },
-  // {
-  //   id: 3,
-  //   title: "AI Image SaaS - Canva Application",
-  //   des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-  //   img: "/p3.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-  //   link: "https://github.com/adrianhajdin/ai_saas_app",
-  // },
+  {
+    id: 3,
+    title: "My Anime List",
+    des: "Glance at an archive of my poor choices in media",
+    img: "/mal.png",
+    iconLists: ["/MAL_logo.svg"],
+    link: "https://myanimelist.net/profile/Aerion_",
+  },
   // {
   //   id: 4,
   //   title: "Animated Apple Iphone 3D Website",
