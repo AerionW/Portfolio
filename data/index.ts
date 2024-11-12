@@ -41,10 +41,10 @@ export const gridItems = [
     title: "Current Favorite Game ",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "justify-center z-55",
-    titleClassName: "justify-start",
-    //img: "/cp_1.png",
-    spareImg: "/cp_1.png",
+    imgClassName: "absolute right-0 -bottom-4",
+    titleClassName: "justify-center lg:justify-start md:justify-center text-center md:text-left",
+    img: "/cp_1.png"
+    //spareImg: "/cp_1.png",
   },
 
   {
@@ -92,7 +92,7 @@ export const projects = [
     des: "Glance at an archive of my poor choices in media",
     img: "/mal.png",
     iconLists: ["/MAL_logo.svg"],
-    link: "https://myanimelist.net/profile/Aerion_",
+    link: "https://myanimelist.net/animelist/Aerion_",
   },
   // {
   //   id: 4,
