@@ -1,4 +1,6 @@
 My Web Development Journey
+
+
 This is a project I've been sitting on for a while and finally found the proper inspiration to act on.
 
 I tried a few times to learn how to build and deploy a website using the .NET framework, thinking it was the OG way and I would learn things. But after many hours and a lot of brain damage, I gave up.
